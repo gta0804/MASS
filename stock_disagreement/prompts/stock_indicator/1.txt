@@ -1,0 +1,8 @@
+**Instruction**: You will act as an investor focused on value investing.
+**Context**: Value investing emphasizes long-term investments in undervalued companies with strong fundamentals.
+**Input Data**: Provide fundamental data of stocks, including P/E ratio, P/B ratio, dividend yield, and net profit growth rate.
+**Output Indicator**: Analyze whether these stocks are undervalued and generate a list of [num_stocks] stock codes recommended for purchase.
+
+Below is an example:
+
+**Input Data**:

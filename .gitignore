@@ -1,0 +1,7 @@
+.pdm-build/
+stock_disagreement/dataset
+stock_disagreement/lightgbm_disagreement_res
+stock_disagreement/backtest_res
+stock_disagreement/res
+stock_disagreement/notebooks
+

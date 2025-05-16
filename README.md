@@ -1,4 +1,4 @@
-# ==MASS==: ==M==ulti-==A==gent ==S==imulation ==S==caling  for Portfolio Construction
+# MASS: Multi-Agent Simulation Scaling  for Portfolio Construction
 
 📜 [Paper Link](https://arxiv.org/abs/2505.10278)
 ## 🧑‍💻Usage

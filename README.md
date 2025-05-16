@@ -1,37 +1,24 @@
-# stock_prediction_benchmark
+# ==MASS==: ==M==ulti-==A==gent ==S==imulation ==S==caling  for Portfolio Construction
 
-#### 介绍
-A unified project for stock prediction model
+📜 [Paper Link](https://arxiv.org/abs/2505.10278)
+## 🧑‍💻Usage
+1. **dependency installation**
+```
+conda create -n your_env_name python==3.10 -y
+conda activate your_env_name
+pip install pdm
+pdm install
+```
+2. **dataset fetching**
+The dataset is under review now. We will release our dataset once the review is finalized.
+After fetching dataset, change all `ROOT_PATH` variables to your dataset directory.
 
-#### 软件架构
-软件架构说明
+3. **Compute resources configuration.**
+We use [Qwen2.5-72B-Instruct](https://huggingface.co/Qwen/Qwen2.5-72B-Instruct) as our foundation model. You can change your foundation model url [here](https://github.com/gta0804/MASS/blob/main/stock_disagreement/agent/basic_agent.py#L57).
+For SSE 50 and the default configuration, 80GiB RAM is needed. You can save memory overhead by adjusting the agent parallelism [here](https://github.com/gta0804/MASS/blob/main/stock_disagreement/exp/trainer.py#L148).
 
+4. **Running MASS**
+```
+python stock_disagreement/main.py
+```
 
-#### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 使用说明
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)

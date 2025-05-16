@@ -42,9 +42,9 @@ def calculate_ic_rankic(res: pd.DataFrame, stock_labels: pd.DataFrame):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser("Stock disagreement argument parser.")
-    parser.add_argument("--num_investor_type", type=int, default= 17)
-    parser.add_argument("--num_agents_per_investor", type=int, default= 30)
-    parser.add_argument("--stock_pool", type=str, default="start_up_100", choices=["ih", "csi_300", "csi_500", "csi_1000", "start_up_100"])
+    parser.add_argument("--num_investor_type", type=int, default= 16)
+    parser.add_argument("--num_agents_per_investor", type=int, default= 32)
+    parser.add_argument("--stock_pool", type=str, default="ih", choices=["ih", "csi_300", "csi_500", "csi_1000", "start_up_100"])
     parser.add_argument("--stock_num", type=int, default=20)
     parser.add_argument("--selected_stock_num", type=int, default=5)
     parser.add_argument("--start_date", type=int, default= 20221202)

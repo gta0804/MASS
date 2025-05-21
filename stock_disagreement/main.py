@@ -63,6 +63,7 @@ if __name__ == "__main__":
     stock_pool = pd.read_parquet(f"{ROOT_PATH}/stock_prediction_benchmark/stock_disagreement/dataset/{stock_pool_name}.parq")
     industry = pd.read_parquet("{ROOT_PATH}/stock_prediction_benchmark/stock_disagreement/dataset/stock_basic_data.parq")
     stock_pool = stock_pool.merge(industry[["Stock", "Name", "Industry"]], on=["Stock"], how="left")
+    # Change to your label file url here.
     stock_labels = pd.read_parquet("{ROOT_PATH}/stock_prediction_benchmark/stock_disagreement/dataset/all_ashare_label.parq")
 
     trainer = StockDisagreementTrainer(

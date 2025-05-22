@@ -17,4 +17,3 @@ from .agent import (StockDisagreementAgent,
                     BaseOptimizer,
                     SimulatedAnnealingOptimizer)
 from .exp import StockDisagreementTrainer
-from .model import DTML

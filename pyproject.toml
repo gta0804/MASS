@@ -5,7 +5,7 @@ url = "https://mirrors.aliyun.com/pypi/simple/"
 verify_ssl = true  
 description = "a unified stock_prediction_benchmark"
 authors = [
-    {name = "gta", email = "taianguo@stu.pku.edu.cn"},
+    {name = "anonymous", email = "anonymous"},
 ]
 dependencies = [
     "ipykernel>=6.29.4",

@@ -8,7 +8,8 @@
 
 ## 📝 What You Need to Know
 
-1. Currently, we only provide a very [small subset](https://github.com/gta0804/MASS/tree/main/stock_disagreement/example_dataset) of the complete dataset for running MASS. The full dataset will be released after the review is completed.
+1. Currently, we provide [SSE 50](https://github.com/gta0804/MASS/tree/main/stock_disagreement/example_dataset) dataset for running MASS. The full dataset will be released after the review is completed.
+2. Besides, we provide SSE 50 index training snapshots, called [ih_dist](https://github.com/gta0804/MASS/tree/main/ih_dist).
 
 ## 🧑‍💻Usage
 1. **dependency installation**

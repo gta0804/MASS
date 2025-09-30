@@ -71,7 +71,6 @@ class StockDisagreementTrainer():
     def _init_agents(self,) -> None:
 
         def cal_pe_quantile(data: pd.DataFrame, look_back_year: int = 10) -> pd.DataFrame:
-            """计算沪深300指数的历史分位值."""
             data_copy = data.copy()
             data_copy["dt"] = pd.to_datetime(data_copy["Date"].astype(str), format="%Y%m%d")
             data_copy.sort_values("dt", inplace=True)
@@ -124,7 +123,6 @@ class StockDisagreementTrainer():
 
     
     def run(self) -> pd.DataFrame:  
-        # 并行处理 agent 对每个日期的投资逻辑  
         def _process_agent(agent:StockDisagreementAgent, date: int, stock_selector):  
             agent.invest(date, stock_selector)
         
